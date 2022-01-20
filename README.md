@@ -1,4 +1,6 @@
-# prog1-saandbox
+# PROG 1 Sandbox
+
+Crappy uncomplete sandbox to test things during finals. Use with caution and don't waste too much time. Send me a PR if you want to add something.
 
 ## ```sandbox/inheritance```
 
