@@ -1,0 +1,29 @@
+package prog.sandbox.probepruefung.four;
+
+import org.junit.jupiter.api.Test;
+
+import prog.sandbox.probepruefung.one.App;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+
+public class UhrTest {
+    private Uhr uhr;
+
+    @BeforeAll
+    public void setUp() {
+        uhr = new Uhr();
+    }
+
+    @Test
+    public void testeErzeugeNull() {
+        new Uhr(0);
+    }
+
+    // Hier kommt Ihre Testmethode
+    @Test
+    public void testeAddiereMinuten(int minuten) {
+        assertThrows(IllegalArgumentException.class, uhr.addiereMinuten(-3));
+    }
+}
