@@ -1,0 +1,60 @@
+package prog.sandbox.probepruefung.five;
+
+public public class Backwaren {
+    public Backwaren() {
+        System.out.println("Backwaren");
+    }
+
+    public Backwaren(String name) {
+        System.out.println("Backwaren: " + name);
+    }
+
+    public Backwaren(boolean vollkorn) {
+        if (!vollkorn) {
+            System.out.println("Backware ist ohne Vollkorn");
+        } else {
+            System.out.println("Backware ist aus Vollkorn");
+        }
+    }
+}
+
+public class Brot extends Backwaren {
+    public Brot() {
+        super("ein Brot");
+        System.out.println("Brot");
+    }
+
+    public Brot(int gramm) {
+        System.out.println(gramm + " Gramm Brot");
+    }
+
+    public Brot(boolean bio, String name) {
+        super(bio);
+        if (bio) {
+            System.out.println("Brot ist Bio");
+        }
+    }
+}
+
+public class Gipfeli extends Brot {
+    public Gipfeli() {
+        System.out.println("Gipfeli");
+    }
+
+    public Gipfeli(int gramm) {
+        super(gramm);
+        System.out.println(gramm + " Gramm Gipfeli");
+    }
+
+    public Gipfeli(String name, boolean bio) {
+        super(bio, name);
+        System.out.println("Gipfeli: " + name);
+    }
+
+}
+
+public static void main(String[] args) {
+    Gipfeli g = new Gipfeli();
+    Gipfeli g2 = new Gipfeli(40);
+    Gipfeli g3 = new Gipfeli("Laugengipfel", true);
+}
