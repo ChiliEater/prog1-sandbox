@@ -22,3 +22,7 @@ Crappy uncomplete sandbox to test things during finals. Use with caution and don
 ## sandbox/probepruefung
 
 My personal solutions/notes for some tasks of the second mock test.
+
+## latex
+
+$\text{LaTeX}+ 12 \frac{\sqrt{woow}}{3^4_5}$
